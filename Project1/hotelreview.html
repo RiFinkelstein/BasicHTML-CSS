@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="hotelreview.css" />
+  </head>
+  <body>
+    <h1 id="title">Rate our hotel</h1>
+    <p id="description" method="post">This site is a survey to rate our hotel</p>
+    <form id="survey-form">
+      <fieldset id="info">
+      <label for="name" id="name-label">Enter Your First Name: <input id="name" name="name" type="text" placeholder="enter your name" required /></label>  
+      <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="enter your email" required /></label>  
+      <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="number" min="21" max="120" placeholder="enter your age" /></label>
+      <label for="dropdown">How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</optiond>
+          <option value="1">Ad</option>
+          <option value="2">friend</option>
+          <option value="3">Google</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+    </fieldset>
+      <fieldset id="rating">
+      <p>how do you rate us?</p>
+      <label for="1" id="ratings" class="radio-inline"><input id="ratings" type="radio" name="radio" class="inline" value="1" /> 1</label>
+      <label for="2" id="ratings" class="radio-inline"><input id="ratings" type="radio" name="radio" class="inline" value="2"/> 2</label>
+      <label for="3" id="ratings" class="radio-inline"><input id="ratings" type="radio" name="radio" class="inline"  value="3"/> 3</label>
+      <label for="4" id="ratings" class="radio-inline"><input id="ratings" type="radio" name="radio" class="inline" value="4"/> 4</label>
+      <label for="5" id="ratings" class="radio-inline"><input id="ratings" type="radio" name="radio" class="inline" value="5"/> 5</label>
+      </fieldset>
+      <fieldset id="enjoyed">
+      <p>I enjoyed...</p>
+      <label><input id="checkbox" type="checkbox"  name="checkbox" class="inline" value="pool"/>The pool</label>
+      <label><input id="checkbox" type="checkbox"  name="checkbox" class="inline" value="gameroom"/>The gameroom</label>
+      <label><input id="checkbox" type="checkbox"  name="checkbox" class="inline" value="beds"/>The beds</label>
+      <label><input id="checkbox" type="checkbox"  name="checkbox" class="inline" value="gym"/>The gym</label>
+      </fieldset>
+      <fieldset id="last">
+      <label for="text-area">extra comments:
+        <textarea id="text-area" name="text-area" rows="3" cols="30" placeholder="I enjoyed the confortabale beds and I did not enjoy the gym...."></textarea>
+      </label>
+      
+      <input type="submit" value="Submit" id="submit"/>
+    </fieldset>
+
+    </form>
+  </body>
+</html>
