@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Getting_Started" class="nav-link">Getting Started</a>
+        <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+        <a href="#Control_Structures" class="nav-link">Control Structures</a>
+        <a href="#Functions_and_Modules" class="nav-link">Functions and Modules</a>
+    </nav>
+
+    <div id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <h2>Introduction</h2>
+            <p>Python is a high-level, interpreted programming language that is easy to learn and read.</p>
+            <p>Python was first released in 1991 by Guido van Rossum, and has since become one of the most popular
+                programming languages in the world.</p>
+            <p>Python is often used for web development, scientific computing, data analysis, artificial intelligence,
+                and more.</p>
+            <p>In this section, we will cover the basics of Python programming, including installation, syntax, and data
+                types.</p>
+            <ul>
+                <li><a href="https://www.python.org/downloads/" target="_blank">Download Python</a></li>
+                <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python Tutorial</a></li>
+            </ul>
+            <code>print("Hello, world!")</code>
+        </section>
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <h2>Getting Started</h2>
+            <p>In this section, we will cover the following:</p>
+            <ul>
+                <li>Installing Python</li>
+                <li>Running Python programs</li>
+                <li>Python IDEs</li>
+            </ul>
+            <h3>Installing Python</h3>
+            <p>To get started with Python, you will first need to download and install it on your computer. You can
+                download
+                the latest version of Python from the <a href="https://www.python.org/downloads/"
+                    target="_blank">official
+                    website</a>.</p>
+            <h3>Running Python programs</h3>
+            <p>Once you have installed Python, you can run Python programs in a number of ways. One way is to use the
+                Python
+                interpreter, which allows you to run Python code interactively.</p>
+            <h3>Python IDEs</h3>
+            <p>Another way to run Python programs is to use an Integrated Development Environment (IDE). There are many
+                IDEs
+                available for Python, including <a href="https://www.jetbrains.com/pycharm/"
+                    target="_blank">PyCharm</a>,
+                <a href="https://www.eclipse.org/downloads/packages/release/2021-03/r/eclipse-ide-python-developers"
+                    target="_blank">Eclipse</a>, and <a href="https://code.visualstudio.com/" target="_blank">Visual
+                    Studio
+                    Code</a>.
+            </p>
+        </section>
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <h2>Basic Syntax</h2>
+            <p>Python code is typically executed line by line, with each line representing a single instruction or
+                statement. Here are a few basic syntax rules to keep in mind:</p>
+            <ul>
+                <li>Python statements do not require semicolons to terminate the line.</li>
+                <li>Comments in Python start with a hash character (#) and continue to the end of the line.</li>
+                <li>Python uses indentation to indicate blocks of code (rather than curly braces like many other
+                    programming languages).</li>
+            </ul>
+            <p>Here's an example of Python code:</p>
+            <code>
+              # This is a comment
+              x = 5
+              y = 10
+              print(x + y) # This will print 15
+            </code>
+        </section>
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <h2>Control Structures</h2>
+            <p>Control structures allow you to control the flow of your Python program. They include:</p>
+            <ul>
+                <li><strong>Conditional statements:</strong> Use <code>if</code>, <code>elif</code>, and
+                    <code>else</code> to execute code based on conditions.
+                </li>
+                <li><strong>Loops:</strong> Use <code>while</code> and <code>for</code> loops to execute code
+                    repeatedly.</li>
+            </ul>
+
+            <h3>Conditional Statements</h3>
+            <p>Conditional statements allow you to execute code based on conditions. Here's an example:</p>
+            <pre><code class="language-python">x = 5
+          if x &gt; 10:
+            print("x is greater than 10")
+          elif x &gt; 5:
+            print("x is greater than 5 but not greater than 10")
+          else:
+            print("x is not greater than 5")</code></pre>
+
+            <h3>Loops</h3>
+            <p>Loops allow you to execute code repeatedly. Here are some examples:</p>
+
+            <h4><code>while</code> Loop</h4>
+            <p>Use a <code>while</code> loop to execute code as long as a condition is true. Here's an example:</p>
+            <pre><code class="language-python">i = 1
+          while i &lt;= 5:
+            print(i)
+            i += 1</code></pre>
+
+            <h4><code>for</code> Loop</h4>
+            <p>Use a <code>for</code> loop to execute code for each item in a sequence. Here's an example:</p>
+            <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]
+          for fruit in fruits:
+            print(fruit)</code></pre>
+
+            <h4><code>range</code> Function</h4>
+            <p>The <code>range</code> function generates a sequence of numbers. Here's an example:</p>
+            <pre><code class="language-python">for i in range(1, 6):
+            print(i)</code></pre>
+
+        </section>
+
+        <section class="main-section" id="Functions_and_Modules">
+            <header>Functions and Modules</header>
+            <h2>Functions and Modules</h2>
+            <p>In this section, we will cover how to define and use functions in Python, as well as how to work with
+                modules.</p>
+
+            <section class="sub-section" id="Functions">
+                <h3>Functions</h3>
+                <p>Functions are a way to group code that performs a specific task, and reuse it throughout your
+                    program. In Python, functions are defined using the <code>def</code> keyword, followed by the
+                    function name, and the function parameters in parentheses.</p>
+                <p>Here's an example:</p>
+                <pre><code>def add_numbers(a, b):
+              sum = a + b
+              return sum</code></pre>
+                <p>In this example, we defined a function called <code>add_numbers</code> that takes two parameters,
+                    <code>a</code> and <code>b</code>, adds them together, and returns the result. We can call this
+                    function from other parts of our program, like this:
+                </p>
+                <pre><code>result = add_numbers(3, 5)
+          print(result) # Output: 8</code></pre>
+            </section>
+
+            <section class="sub-section" id="Modules">
+                <h3>Modules</h3>
+                <p>Modules are a way to organize your code into separate files, and reuse it across multiple programs.
+                    In Python, a module is simply a file with a <code>.py</code> extension that contains Python code.
+                </p>
+                <p>To use a module in your program, you first need to import it using the <code>import</code> statement.
+                    Here's an example:</p>
+                <pre><code>import math
+          
+          result = math.sqrt(25)
+          print(result) # Output: 5.0</code></pre>
+                <p>In this example, we imported the built-in <code>math</code> module, which provides a variety of
+                    mathematical functions. We then used the <code>sqrt</code> function from the <code>math</code>
+                    module to calculate the square root of 25.</p>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>
